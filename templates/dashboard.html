@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Dashboard</h2>
+
+<div class="row mt-4">
+
+    <div class="col-md-3">
+        <div class="card dashboard-card">
+            <div class="card-body">
+                <h6>Total Documents</h6>
+                <h2>{{ total_documents }}</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card dashboard-card">
+            <div class="card-body">
+                <h6>Active Documents</h6>
+                <h2>{{ active_documents }}</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card dashboard-card">
+            <div class="card-body">
+                <h6>Archived</h6>
+                <h2>{{ archived_documents }}</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card dashboard-card">
+            <div class="card-body">
+                <h6>Total Users</h6>
+                <h2>{{ total_users }}</h2>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
