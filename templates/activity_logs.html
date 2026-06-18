@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends 'base.html' %}
 
 {% block content %}
@@ -36,4 +37,44 @@
 
 </table>
 
+=======
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Activity Logs</h2>
+
+<table class="table table-striped">
+
+    <thead>
+
+        <tr>
+            <th>ID</th>
+            <th>User</th>
+            <th>Action</th>
+            <th>Date</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+    {% for log in logs %}
+
+        <tr>
+
+            <td>{{ log.id }}</td>
+            <td>{{ log.fullname }}</td>
+            <td>{{ log.action }}</td>
+            <td>{{ log.created_at }}</td>
+
+        </tr>
+
+    {% endfor %}
+
+    </tbody>
+
+</table>
+
+>>>>>>> a72cffaba9099136b3b23b3b7f422b5cd19dd79b
 {% endblock %}

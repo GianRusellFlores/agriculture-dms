@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 Flask
 mysql-connector-python
+=======
+Flask
+mysql-connector-python
+>>>>>>> a72cffaba9099136b3b23b3b7f422b5cd19dd79b
 Werkzeug
